@@ -2,9 +2,12 @@ import TicketForm from "../../Componenets/TicketForm/TicketForm";
 import React from "react";
 
 const getTicketById = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/myTickets/${id}`, {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `https://ticket-next-app.vercel.app/api/myTickets/${id}`,
+    {
+      cache: "no-store",
+    }
+  );
 
   if (!res.ok) {
     throw new Error("Failed to get ticket.");
