@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "./main.css";
 import NavBar from "./Componenets/NavBar/NavBar";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,7 +11,9 @@ export const metadata = {
   description: "Basic Ticket App for queries",
 };
 
-export default function RootLayout({ children, modal }) {
+export default function RootLayout({ children }: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <head
