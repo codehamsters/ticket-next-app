@@ -1,0 +1,15 @@
+.priority-display {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+
+}
+
+.fa-fire {
+    color: #6536ff;
+    margin-right: 2px;
+}
+
+.fa-fire.inactive {
+    color: slategray;
+}

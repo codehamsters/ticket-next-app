@@ -1,0 +1,11 @@
+.delete-button {
+    background-color: rgb(255, 255, 255, 0.2);
+    border: transparent;
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+}
+
+.fa-x {
+    color: white;
+}

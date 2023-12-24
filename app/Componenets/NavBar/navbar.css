@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #6536ff;
+    /* position: sticky; */
+    top: 0;
+}
+
+.utility-box {
+    display: flex;
+    justify-content: center;
+}
+
+.utility-box i {
+    margin: 0 6px;
+}
+
+.utility-box i,
+.account i {
+    color: #ffffff;
+}
+
+.account i {
+    font-size: 20px;
+}

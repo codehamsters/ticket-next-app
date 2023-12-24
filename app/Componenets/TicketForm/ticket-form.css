@@ -1,0 +1,44 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    width: 50%;
+    color: white;
+    backdrop-filter: blur(24px);
+    background-color: rgba(27, 27, 27, 0.8);
+    padding: 30px;
+    border: 1px solid rgb(225, 225, 225, 0.3);
+    border-radius: 20px;
+}
+
+.ticket-form label {
+    margin-top: 6px;
+    background: transparent;
+}
+
+.ticket-form input,
+textarea,
+select {
+    background-color: rgba(30, 30, 30);
+    color: white;
+    border-radius: 6px;
+    border: 1px solid rgb(225, 225, 225, 0.3);
+    padding: 5px;
+}
+
+
+input.submit-btn {
+    height: 35px;
+    background-color: #6536ff;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+}

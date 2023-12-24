@@ -1,0 +1,15 @@
+.modal {
+    height: 90%;
+    width: 60%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+.modal .ticket-form {
+    width: 100%;
+}

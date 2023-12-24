@@ -1,0 +1,9 @@
+span {
+    border-radius: 9999px;
+    display: inline-block;
+    padding: 1px 4px;
+    font-size: x-small;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #6536ff;
+}
