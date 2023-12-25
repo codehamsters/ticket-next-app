@@ -183,7 +183,7 @@ const TicketForm = ({ ticket }) => {
         <input
           type="submit"
           className="submit-btn"
-          value={EDITMODE ? "Update Ticket" : "Create Ticket"}
+          value={EDITMODE ? "Update" : "Create"}
         />
       </form>
     </div>

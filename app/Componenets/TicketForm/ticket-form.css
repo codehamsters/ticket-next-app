@@ -40,5 +40,12 @@ input.submit-btn {
     background-color: #6536ff;
     color: white;
     font-size: 20px;
-    width: 200px;
+    width: 30%;
+
+}
+
+@media screen and (max-width:800px) {
+    .ticket-form {
+        width: 100%;
+    }
 }
