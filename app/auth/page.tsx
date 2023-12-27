@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import "./auth.css";
 
-const signUp = () => {
+const SignUp = () => {
   const router = useRouter();
 
   const handleChange = (e) => {
@@ -100,4 +100,4 @@ const signUp = () => {
   );
 };
 
-export default signUp;
+export default SignUp;
