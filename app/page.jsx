@@ -32,7 +32,13 @@ const Dashboard = async () => {
               {tickets
                 .filter((ticket) => ticket.category == uniqueCategorie)
                 .map((fileterdTicket, _index) => {
-                  return <TicketCard key={_index} {...fileterdTicket} />;
+                  return (
+                    <TicketCard
+                      key={_index}
+                      {...fileterdTicket}
+                      suppressHydrationWarning
+                    />
+                  );
                 })}
             </div>
           </div>
