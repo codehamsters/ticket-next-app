@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DeleteBlock from "../DeleteBlock/DeleteBlock";
 import PriorityDisplay from "../PriorityDisplay/PriorityDisplay";
 import ProgressDisplay from "../ProgressDisplay/ProgressDisplay";
@@ -9,7 +9,11 @@ import dateTimeUtil from "./DateTimeUtil";
 import Link from "next/link";
 
 const TicketCard = (params) => {
-  // const [createdAt] = useState(dateTimeUtil(params.createdAt));
+  const [creationTime, setCreationTime] = useState("");
+
+  useEffect(() => {
+    setCreationTime(dateTimeUtil(params.createdAt));
+  }, [params.createdAt]);
 
   return (
     <div className="ticket-card" id={params._id}>
@@ -29,7 +33,7 @@ const TicketCard = (params) => {
         <div style={{ flex: 1 }}></div>
         <div className="card-bottom">
           <div className="progress">
-            {/* <p>{createdAt}</p> */}
+            <p>{creationTime}</p>
             <ProgressDisplay progress={params.progress} />
           </div>
           <div className="status">
