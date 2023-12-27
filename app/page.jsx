@@ -33,11 +33,11 @@ const Dashboard = async () => {
                 .filter((ticket) => ticket.category == uniqueCategorie)
                 .map((fileterdTicket, _index) => {
                   return (
-                    <TicketCard
-                      key={_index}
-                      {...fileterdTicket}
-                      suppressHydrationWarning
-                    />
+                    <></>
+                    // <TicketCard
+                    //   key={_index}
+                    //   {...fileterdTicket}
+                    // />
                   );
                 })}
             </div>
