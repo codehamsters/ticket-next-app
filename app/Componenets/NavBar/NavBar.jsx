@@ -10,13 +10,15 @@ const NavBar = () => {
         <Link href="/">
           <i className="fa-solid fa-house icon"></i>
         </Link>
-        <Link href="/TicketPage/new">
+        <Link href="/ticket/new">
           <i className="fa-solid fa-ticket icon"></i>
         </Link>
       </div>
-      <div className="account">
-        <i className="fa-solid fa-circle-user"></i>
-      </div>
+      <Link href="/auth">
+        <div className="account">
+          <i className="fa-solid fa-circle-user"></i>
+        </div>
+      </Link>
     </nav>
   );
 };

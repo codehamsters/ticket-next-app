@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import DeleteBlock from "../DeleteBlock/DeleteBlock";
 import PriorityDisplay from "../PriorityDisplay/PriorityDisplay";
 import ProgressDisplay from "../ProgressDisplay/ProgressDisplay";
@@ -9,7 +9,7 @@ import dateTimeUtil from "./DateTimeUtil";
 import Link from "next/link";
 
 const TicketCard = (params) => {
-  let createdAt = dateTimeUtil(params.createdAt);
+  const [createdAt] = useState(dateTimeUtil(params.createdAt));
 
   return (
     <div className="ticket-card" id={params._id}>
@@ -18,7 +18,7 @@ const TicketCard = (params) => {
         <DeleteBlock id={params._id} />
       </div>
       <Link
-        href={`/TicketPage/${params._id}`}
+        href={`/ticket/${params._id}`}
         style={{
           display: "contents",
         }}
