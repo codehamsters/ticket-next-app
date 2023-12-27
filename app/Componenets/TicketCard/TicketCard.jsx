@@ -9,7 +9,7 @@ import dateTimeUtil from "./DateTimeUtil";
 import Link from "next/link";
 
 const TicketCard = (params) => {
-  const [createdAt] = useState(dateTimeUtil(params.createdAt));
+  // const [createdAt] = useState(dateTimeUtil(params.createdAt));
 
   return (
     <div className="ticket-card" id={params._id}>
@@ -29,7 +29,7 @@ const TicketCard = (params) => {
         <div style={{ flex: 1 }}></div>
         <div className="card-bottom">
           <div className="progress">
-            <p>{createdAt}</p>
+            {/* <p>{createdAt}</p> */}
             <ProgressDisplay progress={params.progress} />
           </div>
           <div className="status">
